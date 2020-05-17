@@ -1,0 +1,11 @@
+import React, { Component } from 'react'
+
+class {{CLASS_NAME}} extends Component {
+  render() {
+    return (
+      {{HTML}}
+    )
+  }
+}
+
+export default {{CLASS_NAME}}

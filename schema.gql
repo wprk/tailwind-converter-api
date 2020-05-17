@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Component {
+  id: ID!
+  component: String!
+}
+
+type Query {
+  component(componentArgs: ComponentArgs!): Component!
+}
+
+input ComponentArgs {
+  id: ID!
+  framework: String!
+}
+
+type Mutation {
+  convertHtml(convertInput: ConvertInput!): Component!
+}
+
+input ConvertInput {
+  framework: String!
+  html: String!
+  parameters: JSON
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON

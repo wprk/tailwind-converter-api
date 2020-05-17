@@ -2,13 +2,13 @@ import { Field, InputType } from '@nestjs/graphql';
 import JSON from 'graphql-type-json';
 
 @InputType()
-export class ConvertHtmlInput {
+export class ConvertInput {
   @Field()
   framework: 'react' | 'vue';
 
   @Field()
   html: string;
 
-  @Field()
-  parameters: JSON
+  @Field(() => JSON, { nullable: true })
+  parameters: any
 }
